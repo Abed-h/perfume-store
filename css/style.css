@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #160306;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#home {
+  background-color: rgb(16, 9, 9);
+  color: white;
+}
+
+#basket {
+  background-color: #160306;
+  height: 172vh;
+}
+
+.card {
+  transition: 0.5s;
+  background-color: #240a0e;
+  color: white;
+  border: 2px white solid;
+}
+
+.card:hover {
+  transform: translate(-10px);
+}
+
+.transition {
+  transition: 0.35s;
+}
+
+.transition:hover {
+  transform: translate(-1px);
+}
+
+.high {
+  height: 90vh;
+  align-content: center;
+  justify-items: center;
+}
+
+.enter {
+  width: 25%;
+}
+
+.right {
+  text-align: right;
+}
+
+.img-2 {
+  margin-left: 25%;
+  width: 50%;
+}
+
+.details {
+  text-align: center;
+}
+
+.img-1 {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.left {
+  text-align: right;
+  font-size: 3rem;
+}
+
+.font {
+  text-align: 5rem;
+}
+
+.icon {
+  margin-bottom: 8px;
+}
+
+#title {
+  background-color: rgb(16, 9, 9);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo-img {
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #010101, #160306, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+#sales {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.bretty {
+  border-radius: 30px;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 990px) {
+  .logo {
+    width: 100%;
+  }
+
+  .bretty {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 950px) {
+  #sales {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #basket {
+    height: 230vh;
+  }
+}
+
+@media (max-width: 645px) {
+  #sales {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  #basket {
+    height: 435vh;
+  }
+}
